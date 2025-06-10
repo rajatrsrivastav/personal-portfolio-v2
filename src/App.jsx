@@ -89,11 +89,9 @@ const App = () => {
           className="fixed bottom-0 right-0 w-96 h-96 md:w-[60vw] md:h-[60vw] max-w-[800px] max-h-[800px] rounded-full bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-white/10 -translate-y-1/4 translate-x-1/4 animate-pulse z-0"
           style={{
             animation: "float 6s ease-in-out infinite",
-          }}
-        />
-      </div>
-    </div>
-  );
-};
+          }}/></div>
+          </div>
+          )
+}
 
 export default App;
