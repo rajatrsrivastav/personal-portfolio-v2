@@ -1,5 +1,4 @@
 import React from "react";
-import More from "./more"
 
 
 const Navbar = () => {
@@ -22,12 +21,12 @@ const Navbar = () => {
         >
           About
         </a>
-        <a
+        {/* <a
           href="#"
           className="text-white/70 hover:text-white hover:bg-white/20 px-6 py-3 rounded-full text-sm transition-all duration-300"
         >
           Work
-        </a>
+        </a> */}
         <a
           href="#"
           className="text-white/70 hover:text-white hover:bg-white/20 px-6 py-3 rounded-full text-sm transition-all duration-300"
