@@ -1,10 +1,12 @@
 import React from "react";
+import More from "./more"
+
 
 const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center bg-transparent z-50">
-      <a href="/" className="w-17 h-17">
-        <img src="./rs_white_text1.png"></img>
+      <a href="/" className="w-15 h-15">
+        <img src="./rs_white_text.png"></img>
       </a>
 
       <nav className="hidden md:flex items-center bg-white/10 backdrop-blur-xl rounded-full p-2">
@@ -30,7 +32,7 @@ const Navbar = () => {
           href="#"
           className="text-white/70 hover:text-white hover:bg-white/20 px-6 py-3 rounded-full text-sm transition-all duration-300"
         >
-          Blog
+          Contact
         </a>
         <a
           href="#"
