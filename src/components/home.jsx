@@ -19,15 +19,15 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-8 justify-center">
-          <div className="">
+          <a href="https://peerbot-ai.vercel.app/" className="">
             <div
               className={`inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-full text-sm cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/30`}
             >
               <span className="font-medium">New</span>
-              <span className="opacity-70">BotBuddy is live!</span>
+              <span className="opacity-70">PeerBot is live!</span>
               <ArrowRight className="w-4 h-4" />
             </div>
-          </div>
+          </a>
           <a
             href="mailto:hello@rajatsrivastav.site"
             className="text-white/60 hover:text-white flex items-center gap-2 transition-colors duration-300"
