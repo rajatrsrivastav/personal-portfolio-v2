@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { ArrowRightIcon } from "lucide-react";
 import Footer from "./footer"
-
+import { SparklesCore } from "./ui/sparkles";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,9 +43,9 @@ const Contact = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
+            <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg hidden sm:block">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.054096847254!2d77.20902145!3d28.6139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1c5f30eec3%3A0xa63a3e3f85e3a418!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1718006612345!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83919955306!2d77.06889967837038!3d28.527554409660315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce35a5aaaaaab%3A0xe6f38e11e7a35e5d!2sDelhi%20NCR!5e0!3m2!1sen!2sin!4v1718007834567!5m2!1sen!2"
                 width="100%"
                 height="100%"
                 allowFullScreen=""
@@ -54,7 +55,6 @@ const Contact = () => {
               ></iframe>
             </div>
 
-            {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="flex flex-col md:flex-row gap-4">
                 <input
@@ -63,7 +63,7 @@ const Contact = () => {
                   placeholder="Full Name"
                   value={formData.fullName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-[#1a1a1a] text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent backdrop-blur-sm resize-none"
                   required
                 />
                 <input
@@ -72,7 +72,7 @@ const Contact = () => {
                   placeholder="Email Address"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-[#1a1a1a] text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent backdrop-blur-sm resize-none"
                   required
                 />
               </div>
@@ -83,7 +83,7 @@ const Contact = () => {
                 placeholder="Subject (Optional)"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-[#1a1a1a] text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent backdrop-blur-sm resize-none"
               />
 
               <textarea
@@ -92,29 +92,16 @@ const Contact = () => {
                 rows="6"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-[#1a1a1a] text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent backdrop-blur-sm resize-none"
                 required
               ></textarea>
 
-              <button
-                type="submit"
-                className="mt-4 px-6 py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-200 transition flex items-center gap-2"
-              >
-                SEND MESSAGE
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+               <button
+                  onClick={handleSubmit}
+                  className="w-full px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                SEND MESSAGE
+                <ArrowRightIcon/>
               </button>
             </form>
           </div>

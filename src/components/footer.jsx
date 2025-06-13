@@ -1,12 +1,7 @@
 import { useState } from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="relative z-10 text-white mt-20 pb-0">
       <div className="max-w-6xl">
@@ -95,8 +90,6 @@ const footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-purple-400">
               Services
@@ -134,4 +127,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

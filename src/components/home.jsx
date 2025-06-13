@@ -1,9 +1,10 @@
-import React from 'react'
-import {ArrowRight, Mail } from 'lucide-react'
+import React from "react";
+import { ArrowRight, Mail } from "lucide-react";
+import BackgroundBeamsWithCollision from "./BackgroundBeamsWithCollision";
 
-const home = () => {
+const Home = () => {
   return (
-    <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-6 text-center">
+    <BackgroundBeamsWithCollision className="relative z-20 flex flex-col items-center justify-center min-h-screen px-6 text-center overflow-hidden">
         <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-light leading-tight mb-8 max-w-6xl">
           I turn real-world challenges
           <br />
@@ -35,8 +36,8 @@ const home = () => {
             hello@rajatsrivastav.site
           </a>
         </div>
-      </div>
-  )
-}
+      </BackgroundBeamsWithCollision>
+  );
+};
 
-export default home
+export default Home;

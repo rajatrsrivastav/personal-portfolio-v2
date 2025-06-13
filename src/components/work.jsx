@@ -2,7 +2,7 @@ import React from 'react'
 import {ExternalLink} from 'lucide-react'
 
 
-const work = () => {
+const Work = () => {
   return (
     <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-6">
         <div className="max-w-6xl">
@@ -104,4 +104,4 @@ const work = () => {
   )
 }
 
-export default work
+export default Work
