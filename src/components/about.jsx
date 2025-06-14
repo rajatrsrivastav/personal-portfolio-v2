@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalTrigger,
-} from "./ui/animated-modal";
 
 const skills = [
   {
@@ -153,73 +146,76 @@ const skills = [
       "bg-gradient-to-br from-yellow-500/10 via-amber-400/5 to-yellow-600/10 border-yellow-500/20 text-yellow-300 backdrop-blur-sm",
   },
 ];
+
 const About = () => {
   return (
-    <div className="relative z-20 flex flex-col items-center justify-center min-h-screen">
-      <div className="max-w-4xl">
-        <div className="text-sm text-gray-400 uppercase tracking-widest mb-4">
+    <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl w-full">
+        <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-widest mb-4 text-center sm:text-left">
           About Me
         </div>
-        <p className="text-xl text-gray-300 leading-relaxed">
-          I’m a first-year Computer Science student with a deep interest in
+        <p className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-4 text-center sm:text-left">
+          I'm a first-year Computer Science student with a deep interest in
           full-stack web development. I enjoy turning complex problems into
-          user-friendly web interfaces, and I’m constantly exploring new tech —
-          whether it’s enhancing interactivity with Framer Motion or optimizing
+          user-friendly web interfaces, and I'm constantly exploring new tech —
+          whether it's enhancing interactivity with Framer Motion or optimizing
           performance in Next.js apps.
         </p>
-        <p className="text-xl text-gray-300 leading-relaxed">I Specialize In</p>
+        <p className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-4 text-center sm:text-left">
+          I Specialize In
+        </p>
         <br />
-        <h1 className="text-6xl md:text-7xl font-bold mb-16 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 sm:mb-12 md:mb-16 text-center">
           Skills &{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 italic">
             Technologies
           </span>
         </h1>
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-wrap justify-center gap-4 mb-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-3 sm:mb-4">
             {skills.slice(0, 6).map((skill, index) => (
               <div
                 key={index}
-                className={`${skill.color} px-4 py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-2 hover:scale-105 transition-transform cursor-pointer`}
+                className={`${skill.color} px-2 sm:px-3 md:px-4 py-2 sm:py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-1 sm:space-x-2 hover:scale-105 transition-transform cursor-pointer`}
               >
-                <span className="text-lg">{skill.icon}</span>
-                <span className="font-medium">{skill.name}</span>
+                <span className="text-sm sm:text-base md:text-lg">{skill.icon}</span>
+                <span className="font-medium text-xs sm:text-sm md:text-base">{skill.name}</span>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-3 sm:mb-4">
             {skills.slice(6, 12).map((skill, index) => (
               <div
                 key={index}
-                className={`${skill.color} px-4 py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-2 hover:scale-105 transition-transform cursor-pointer`}
+                className={`${skill.color} px-2 sm:px-3 md:px-4 py-2 sm:py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-1 sm:space-x-2 hover:scale-105 transition-transform cursor-pointer`}
               >
-                <span className="text-lg">{skill.icon}</span>
-                <span className="font-medium">{skill.name}</span>
+                <span className="text-sm sm:text-base md:text-lg">{skill.icon}</span>
+                <span className="font-medium text-xs sm:text-sm md:text-base">{skill.name}</span>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-3 sm:mb-4">
             {skills.slice(12, 19).map((skill, index) => (
               <div
                 key={index}
-                className={`${skill.color} px-4 py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-2 hover:scale-105 transition-transform cursor-pointer`}
+                className={`${skill.color} px-2 sm:px-3 md:px-4 py-2 sm:py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-1 sm:space-x-2 hover:scale-105 transition-transform cursor-pointer`}
               >
-                <span className="text-lg">{skill.icon}</span>
-                <span className="font-medium">{skill.name}</span>
+                <span className="text-sm sm:text-base md:text-lg">{skill.icon}</span>
+                <span className="font-medium text-xs sm:text-sm md:text-base">{skill.name}</span>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
             {skills.slice(19).map((skill, index) => (
               <div
                 key={index}
-                className={`${skill.color} px-4 py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-2 hover:scale-105 transition-transform cursor-pointer`}
+                className={`${skill.color} px-2 sm:px-3 md:px-4 py-2 sm:py-3 rounded-lg border backdrop-blur-sm flex items-center space-x-1 sm:space-x-2 hover:scale-105 transition-transform cursor-pointer`}
               >
-                <span className="text-lg">{skill.icon}</span>
-                <span className="font-medium">{skill.name}</span>
+                <span className="text-sm sm:text-base md:text-lg">{skill.icon}</span>
+                <span className="font-medium text-xs sm:text-sm md:text-base">{skill.name}</span>
               </div>
             ))}
           </div>
