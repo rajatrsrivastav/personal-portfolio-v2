@@ -1,10 +1,8 @@
-import React from "react";
-
 const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 p-3 sm:p-4 md:p-6 flex justify-between items-center bg-transparent z-50">
       <a href="/" className="w-12 h-12 sm:w-14 sm:h-14 md:w-15 md:h-15">
-        <img src="./rs_white_text.png" className="w-full h-full object-contain" alt="Logo" />
+        <img src="./rs_white_text.png" className="w-full h-full object-contain" alt="Logo"/>
       </a>
 
       <nav className="hidden md:flex items-center bg-white/10 backdrop-blur-xl rounded-full p-2">
